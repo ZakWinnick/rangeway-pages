@@ -1,10 +1,10 @@
-# Rangeway Energy - GitHub Pages (Test)
+# Rangeway Energy - Main Website
 
-This is a test conversion of the Rangeway Energy main site from PHP to Jekyll for GitHub Pages hosting.
+Official website for Rangeway Energy, America's premier electric vehicle charging network for scenic corridors.
 
 ## Overview
 
-This repository contains the Jekyll-powered version of the main Rangeway Energy website, converted from PHP to work with GitHub Pages.
+This repository contains the main Rangeway Energy website, built with Jekyll and hosted on GitHub Pages.
 
 ## Structure
 
@@ -45,17 +45,20 @@ This repository contains the Jekyll-powered version of the main Rangeway Energy 
 
 This site is designed to be deployed to GitHub Pages. Simply push to the main branch and GitHub will automatically build and deploy the site.
 
-## Key Changes from PHP Version
+## Related Repositories
 
-- Converted PHP includes to Jekyll includes
-- Moved config.php variables to _config.yml and page front matter
-- Converted .php extensions to .html with proper permalinks
-- Maintained all existing styling and content
-- Preserved all meta tags, SEO elements, and structured data
+- **Newsroom:** [rangeway-newsroom](https://github.com/zakwinnick/rangeway-newsroom) - Press releases, case studies, and blog
 
-## Notes
+## Features
 
-- All styling from modern.css has been preserved
-- Navigation, header, and footer work identically to the PHP version
-- Image paths remain unchanged (/images/)
-- All external links and integrations remain functional
+- Responsive design with mobile-first approach
+- SEO optimized with structured data and meta tags
+- Integration with Tinylytics analytics
+- Fireside FM podcast player
+- Social media integration
+- Climate-controlled indoor lounge information
+- Network expansion planning details
+
+## License
+
+© 2024 Rangeway Energy. All rights reserved.
