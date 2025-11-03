@@ -1,8 +1,20 @@
+# Jekyll
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-.bundle/
-vendor/
+
+# Ruby
 Gemfile.lock
+vendor/
+.bundle/
+
+# macOS
 .DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

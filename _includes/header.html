@@ -64,12 +64,16 @@
     }
     </script>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- External Stylesheets -->
-    <link rel="stylesheet" href="{{ '/assets/css/modern.css' | relative_url }}?v={{ site.asset_version }}">
-    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.asset_version }}">
 
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -84,43 +88,42 @@
 <!-- Skip to main content for accessibility -->
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<nav role="navigation" aria-label="Main navigation" class="modern-nav">
-    <div class="nav-container">
-        <a href="{{ '/' | relative_url }}" class="logo-link" aria-label="Rangeway Energy Home">
-            <img src="https://rangeway.energy/images/banner.png" alt="Rangeway Energy" class="nav-logo" />
-        </a>
-
-        <button class="hamburger"
-                onclick="toggleMenu()"
-                aria-label="Toggle navigation menu"
-                aria-expanded="false"
-                aria-controls="navLinks">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <div class="nav-links" id="navLinks">
-            <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Home</a>
-            <a href="{{ '/why-rangeway/' | relative_url }}" {% if page.url contains '/why-rangeway' %}class="active" aria-current="page"{% endif %}>Why Rangeway</a>
-            <a href="{{ '/network/' | relative_url }}" {% if page.url contains '/network' %}class="active" aria-current="page"{% endif %}>Network</a>
-            <a href="{{ '/for-travelers/' | relative_url }}" {% if page.url contains '/for-travelers' %}class="active" aria-current="page"{% endif %}>For Travelers</a>
-            <a href="{{ site.organization.newsroom_site }}" target="_blank" rel="noopener noreferrer">Newsroom</a>
-            <a href="{{ '/contact/' | relative_url }}" {% if page.url contains '/contact' %}class="active" aria-current="page"{% endif %}>Contact</a>
-
-            <div class="social-icons" role="list" aria-label="Social media links">
-                <a href="{{ site.social.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (Twitter)">
-                    <i class="fa-brands fa-x-twitter"></i>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="logo">
+                <a href="{{ '/' | relative_url }}">
+                    <img src="{{ '/images/banner.png' | relative_url }}" alt="Rangeway Energy" class="logo-img">
                 </a>
-                <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="{{ site.social.youtube }}" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="{{ '/why-rangeway.html' | relative_url }}" class="nav-link">Why Rangeway</a>
+                <a href="{{ '/network.html' | relative_url }}" class="nav-link">Network</a>
+                <a href="{{ '/for-travelers.html' | relative_url }}" class="nav-link">For Travelers</a>
+                <a href="{{ site.organization.newsroom_site }}" target="_blank" rel="noopener noreferrer" class="nav-link">Newsroom</a>
+                <a href="{{ '/contact.html' | relative_url }}" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <div class="social-icons">
+                    <a href="{{ site.social.twitter }}" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="{{ site.social.youtube }}" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
