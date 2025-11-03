@@ -4,8 +4,8 @@
 # Site settings
 title: Rangeway Energy
 description: "Premium EV charging network built for scenic corridors. Climate-controlled indoor comfort at every location. Ultra-fast charging with hospitality-grade amenities."
-url: "https://beta.rangeway.energy"
-baseurl: ""
+url: "https://rangeway.energy"
+baseurl: "/beta"
 
 # Organization info
 organization:
