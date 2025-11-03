@@ -1,0 +1,44 @@
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>{{ site.organization.name }}</h4>
+                <a href="{{ '/why-rangeway/' | relative_url }}">Why Rangeway</a>
+                <a href="{{ '/network/' | relative_url }}">Network</a>
+                <a href="{{ '/for-travelers/' | relative_url }}">For Travelers</a>
+                <a href="{{ site.organization.newsroom_site }}" target="_blank" rel="noopener noreferrer">Newsroom</a>
+                <a href="{{ '/contact/' | relative_url }}">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="https://pathfinder.rangeway.energy" target="_blank" rel="noopener noreferrer">Pathfinder Rewards</a>
+                <a href="https://investors.rangeway.energy" target="_blank" rel="noopener noreferrer">Investor Portal</a>
+                <a href="https://fieldnotes.rangeway.energy" target="_blank" rel="noopener noreferrer">Field Notes</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="footer-social">
+                    <a href="{{ site.social.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="{{ site.social.youtube }}" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.organization.name }}. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- External JavaScript -->
+<script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.asset_version }}"></script>
