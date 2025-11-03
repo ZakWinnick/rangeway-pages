@@ -579,7 +579,7 @@ p {
     }
 
     .hero {
-        padding: 40px 0;
+        padding: 100px 0 40px;
     }
 
     .hero-grid {
@@ -857,7 +857,8 @@ p {
 /* Responsive Design for Travelers Page */
 @media (max-width: 768px) {
     .hero-travelers {
-        height: 500px;
+        min-height: 500px;
+        padding-top: 100px;
     }
 
     .hero-content-center h1 {
@@ -1312,7 +1313,7 @@ p {
 /* Responsive Design for Partners Page */
 @media (max-width: 768px) {
     .partners-hero {
-        padding: 60px 0;
+        padding: 100px 0 60px;
     }
 
     .partners-hero-content h1 {
@@ -1573,7 +1574,7 @@ p {
 /* Responsive Design for Contact Page */
 @media (max-width: 768px) {
     .contact-hero {
-        padding: 60px 0 40px;
+        padding: 100px 0 40px;
     }
 
     .contact-hero-content h1 {
