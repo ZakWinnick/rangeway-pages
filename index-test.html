@@ -1,10 +1,50 @@
----
-layout: default
-title: "Rangeway Energy | Where Charging Becomes Part of Your Journey"
-description: "America's first premium EV charging network designed for scenic highway corridors and National Parks routes. Indoor climate-controlled comfort at every location."
-keywords: "EV charging, electric vehicle charging, scenic route charging, National Parks EV charging, premium EV amenities, indoor EV charging"
-og_image: "/images/waystation-exterior1-az.jpg"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangeway Energy | Where Charging Becomes Part of Your Journey</title>
+    <meta name="description" content="America's first premium EV charging network designed for scenic highway corridors and National Parks routes. Indoor climate-controlled comfort at every location.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Branded Navigation Header -->
+<nav style="background: white; border-bottom: 1px solid #E6E6E6; padding: 20px 0; position: sticky; top: 0; z-index: 1000;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo">
+            <a href="/" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 34 34">
+                    <defs>
+                        <linearGradient id="headerLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#F09060"/>
+                            <stop offset="100%" stop-color="#FFB366"/>
+                        </linearGradient>
+                        <clipPath id="headerLogoRounded">
+                            <rect width="34" height="34" rx="10" ry="10" />
+                        </clipPath>
+                    </defs>
+                    <rect width="34" height="34" rx="10" ry="10" fill="url(#headerLogoGrad)" />
+                    <g clip-path="url(#headerLogoRounded)">
+                        <path d="M 0 26 L 8 18 L 15 24 L 22 17 L 34 26 L 34 34 L 0 34 Z" fill="#2f2f2f" />
+                    </g>
+                    <circle cx="25" cy="7" r="4" fill="white" fill-opacity="0.6" />
+                </svg>
+                <span style="font-family: 'Montserrat', -apple-system, sans-serif; font-size: 20px; font-weight: 800; letter-spacing: 0.08em; color: #4A4A4A;">RANGEWAY</span>
+            </a>
+        </div>
+        <div style="display: flex; gap: 32px; align-items: center;">
+            <a href="/why-rangeway.html" style="color: #4A4A4A; text-decoration: none; font-weight: 500;">Why Rangeway</a>
+            <a href="/network.html" style="color: #4A4A4A; text-decoration: none; font-weight: 500;">Network</a>
+            <a href="/for-travelers.html" style="color: #4A4A4A; text-decoration: none; font-weight: 500;">For Travelers</a>
+            <a href="/contact.html" style="color: #4A4A4A; text-decoration: none; font-weight: 500;">Contact</a>
+        </div>
+    </div>
+</nav>
 
 <style>
     :root {
@@ -271,22 +311,6 @@ og_image: "/images/waystation-exterior1-az.jpg"
 
 <!-- Hero Section with Brand Gradient -->
 <section class="brand-hero">
-    <div class="brand-logo-lockup">
-        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 34 34">
-            <defs>
-                <clipPath id="heroRounded">
-                    <rect width="34" height="34" rx="10" ry="10" />
-                </clipPath>
-            </defs>
-            <rect width="34" height="34" rx="10" ry="10" fill="rgba(255,255,255,0.2)" />
-            <g clip-path="url(#heroRounded)">
-                <path d="M 0 26 L 8 18 L 15 24 L 22 17 L 34 26 L 34 34 L 0 34 Z" fill="white" />
-            </g>
-            <circle cx="25" cy="7" r="4" fill="white" fill-opacity="0.8" />
-        </svg>
-        <div class="brand-wordmark">RANGEWAY</div>
-    </div>
-
     <h1>Where Charging Becomes Part of Your Journey</h1>
     <p class="tagline">Indoor comfort at every location. Clean restrooms, climate control, and a place to rest on America's most beautiful routes.</p>
 
@@ -420,17 +444,50 @@ og_image: "/images/waystation-exterior1-az.jpg"
 </section>
 
 <!-- Footer with Brand Colors -->
-<style>
-    footer {
-        background: var(--mountain-charcoal);
-        color: white;
-    }
+<footer style="background: var(--mountain-charcoal); color: white; padding: 60px 20px 40px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+        <div>
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 34 34">
+                    <defs>
+                        <clipPath id="footerRounded">
+                            <rect width="34" height="34" rx="10" ry="10" />
+                        </clipPath>
+                    </defs>
+                    <rect width="34" height="34" rx="10" ry="10" fill="white" />
+                    <g clip-path="url(#footerRounded)">
+                        <path d="M 0 26 L 8 18 L 15 24 L 22 17 L 34 26 L 34 34 L 0 34 Z" fill="#4A4A4A" />
+                    </g>
+                    <circle cx="25" cy="7" r="4" fill="white" fill-opacity="0.8" />
+                </svg>
+                <span style="font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 800; letter-spacing: 0.08em;">RANGEWAY</span>
+            </div>
+            <p style="color: var(--coastal-cream); line-height: 1.6; font-size: 0.95rem;">Where charging becomes part of your journey.</p>
+        </div>
 
-    footer a {
-        color: var(--coastal-cream);
-    }
+        <div>
+            <h4 style="margin-bottom: 16px; font-size: 1rem; font-weight: 600;">Quick Links</h4>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <a href="/why-rangeway.html" style="color: var(--coastal-cream); text-decoration: none; transition: color 0.2s;">Why Rangeway</a>
+                <a href="/network.html" style="color: var(--coastal-cream); text-decoration: none; transition: color 0.2s;">Network</a>
+                <a href="/for-travelers.html" style="color: var(--coastal-cream); text-decoration: none; transition: color 0.2s;">For Travelers</a>
+                <a href="/contact.html" style="color: var(--coastal-cream); text-decoration: none; transition: color 0.2s;">Contact</a>
+            </div>
+        </div>
 
-    footer a:hover {
-        color: var(--golden-highway);
-    }
-</style>
+        <div>
+            <h4 style="margin-bottom: 16px; font-size: 1rem; font-weight: 600;">Connect</h4>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <a href="https://fieldnotes.rangeway.energy" style="color: var(--coastal-cream); text-decoration: none; transition: color 0.2s;">Field Notes</a>
+                <a href="mailto:hello@rangeway.energy" style="color: var(--coastal-cream); text-decoration: none; transition: color 0.2s;">hello@rangeway.energy</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="max-width: 1200px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--fog-gray); font-size: 0.9rem;">
+        <p>&copy; 2025 Rangeway Energy. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
