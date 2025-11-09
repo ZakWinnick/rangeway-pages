@@ -733,16 +733,20 @@ p {
     }
 
     .nav-actions {
-        gap: 0.75rem;
+        gap: 1.5rem;
     }
 
     .social-icons {
-        gap: 0.5rem;
-        margin-right: 0;
+        gap: 0.75rem;
+        margin-right: 1rem;
     }
 
     .nav-actions .btn-primary {
         display: none;
+    }
+
+    .mobile-menu-toggle {
+        margin-left: 0.5rem;
     }
 
     .hero {
