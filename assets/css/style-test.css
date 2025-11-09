@@ -868,13 +868,13 @@ p {
 }
 
 .footer-section a {
-    color: var(--coastal-cream);
+    color: var(--coastal-cream) !important;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-    color: var(--golden-highway);
+    color: var(--golden-highway) !important;
 }
 
 .footer-social-icons {
@@ -1249,6 +1249,11 @@ p {
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Fix inline grid overrides on mobile - for Pathfinder Rewards section */
+    .services-grid[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
     }
 
     .network-map {
