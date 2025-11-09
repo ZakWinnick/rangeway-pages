@@ -88,6 +88,37 @@ html {
         --stats-bg: #0f0f0f;
     }
 
+    /* Ensure body text is visible in dark mode */
+    body {
+        color: var(--text-primary);
+    }
+
+    /* Nav links in dark mode */
+    .nav-link {
+        color: var(--text-primary);
+    }
+
+    /* Logo wordmark in header for dark mode */
+    .logo span {
+        color: var(--text-heading) !important;
+    }
+
+    /* Social icons in dark mode */
+    .social-icon,
+    .social-icon i {
+        color: var(--text-primary);
+    }
+
+    .social-icon:hover,
+    .social-icon:hover i {
+        color: var(--accent-color);
+    }
+
+    /* Headings in dark mode */
+    h1, h2, h3, h4 {
+        color: var(--text-heading);
+    }
+
     /* Adjust mobile menu toggle bars for dark mode */
     .mobile-menu-toggle span {
         background: var(--text-primary);
@@ -100,6 +131,11 @@ html {
 
     .footer .footer-section svg path {
         fill: #4A4A4A;
+    }
+
+    /* Navbar border for dark mode */
+    .navbar {
+        border-bottom-color: var(--border-color);
     }
 }
 
