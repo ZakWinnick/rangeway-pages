@@ -1,6 +1,6 @@
-# Rangeway Energy Website
+# Rangeway Website
 
-Official website for Rangeway Energy - America's premium scenic highway EV charging network.
+Official website for Rangeway - America's premium scenic highway EV charging network.
 
 ## Brand Guidelines Implementation
 

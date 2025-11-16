@@ -1,15 +1,15 @@
-# Rangeway Energy Site
+# Rangeway Site
 # Jekyll configuration for GitHub Pages
 
 # Site settings
-title: Rangeway Energy
+title: Rangeway
 description: "Premium EV charging network built for scenic corridors. Climate-controlled indoor comfort at every location. Ultra-fast charging with hospitality-grade amenities."
 url: "https://rangeway.energy"
 baseurl: ""
 
 # Organization info
 organization:
-  name: Rangeway Energy
+  name: Rangeway
   tagline: "Indoor Comfort. Every Stop."
   newsroom_site: "https://newsroom.rangeway.energy"
   email: hello@rangeway.energy
@@ -31,12 +31,12 @@ social:
 # Page metadata
 pages:
   index:
-    title: "Rangeway Energy | Where EV Charging Meets Hospitality"
+    title: "Rangeway | Where EV Charging Meets Hospitality"
     description: "Premium EV charging network built for scenic corridors. Climate-controlled indoor comfort at every location. Ultra-fast charging with hospitality-grade amenities starting with Baker Basecamp on the LA-Vegas corridor."
     keywords: "EV charging, electric vehicle charging, scenic route charging, Death Valley EV charging, Baker California charging station, premium EV amenities, indoor EV charging"
     og_image: "/images/waystation-exterior1-az.jpg"
   network:
-    title: "Our Network | Rangeway Energy - Baker Basecamp & Regional Waystations"
+    title: "Our Network | Rangeway - Baker Basecamp & Regional Waystations"
     description: "Explore our growing network of climate-controlled charging locations. Starting with Baker Basecamp on the LA-Vegas corridor, expanding throughout the Southwest with regional Waystations."
     keywords: "Rangeway locations, Baker charging station, Death Valley charging, LA Vegas corridor charging, Southwest EV network"
     og_image: "/images/baker-exterior1.jpg"
@@ -51,9 +51,9 @@ pages:
     keywords: "EV route planner, Pathfinder rewards, EV road trip planning, charging discounts"
     og_image: "/images/waystation-exterior1-shasta.jpg"
   contact:
-    title: "Contact Us | Rangeway Energy"
-    description: "Get in touch with Rangeway Energy. Whether you're an investor, partner, or EV traveler, we'd love to hear from you."
-    keywords: "contact Rangeway Energy, EV charging inquiries, investment opportunities"
+    title: "Contact Us | Rangeway"
+    description: "Get in touch with Rangeway. Whether you're an investor, partner, or EV traveler, we'd love to hear from you."
+    keywords: "contact Rangeway, EV charging inquiries, investment opportunities"
     og_image: "/images/waystation-exterior2-jt.jpg"
 
 # Analytics
