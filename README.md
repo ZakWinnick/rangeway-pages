@@ -121,7 +121,7 @@ bundle exec jekyll build
 
 The site is configured for GitHub Pages deployment. Files are generated to `_site/` directory.
 
-Production URL: https://rangeway.energy
+Production URL: https://rangewayev.com
 
 ## Brand Voice & Terminology
 
@@ -163,7 +163,7 @@ Previous production versions are archived in `_archive/production-backup-YYYYMMD
 ## Support
 
 For questions or issues, contact:
-- **General**: hello@rangeway.energy
+- **General**: hello@rangewayev.com
 - **Technical**: (650) 420-6300
 
 ---

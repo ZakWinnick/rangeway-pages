@@ -4,7 +4,7 @@
 # Site settings
 title: Rangeway
 description: "Premium EV charging network built for scenic corridors. Climate-controlled indoor comfort at every location. Ultra-fast charging with hospitality-grade amenities."
-url: "https://rangeway.energy"
+url: "https://rangewayev.com"
 baseurl: ""
 
 # Organization info
@@ -12,7 +12,7 @@ organization:
   name: Rangeway Energy, Inc.
   tagline: "Indoor Comfort. Every Stop."
   newsroom_site: "https://newsroom.rangeway.energy"
-  email: hello@rangeway.energy
+  email: hello@rangewayev.com
   phone: "(650) 420-6300"
   phone_raw: "6504206300"
   address:
@@ -23,10 +23,10 @@ organization:
 
 # Social media
 social:
-  twitter: "https://x.com/rangewayenergy"
-  instagram: "https://instagram.com/rangewayenergy"
+  twitter: "https://x.com/rangewayev"
+  instagram: "https://instagram.com/rangewayev"
   linkedin: "https://linkedin.com/company/rangewayenergy"
-  youtube: "https://youtube.com/@rangewayenergy"
+  youtube: "https://youtube.com/@rangewayev"
 
 # Page metadata
 pages:
