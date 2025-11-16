@@ -4,7 +4,7 @@ Official website for Rangeway - America's premium scenic highway EV charging net
 
 ## Brand Guidelines Implementation
 
-This site implements the official Rangeway brand guidelines (see `brand.html` for full documentation) with:
+This site implements the official Rangeway brand guidelines with:
 
 ### Brand Colors
 - **Sunset Coral** (#F09060) - Primary brand color
@@ -24,82 +24,40 @@ This site implements the official Rangeway brand guidelines (see `brand.html` fo
 - Used consistently in header and footer
 - Proper clear space and sizing maintained
 
-## Pages Overview
+## Site Structure
 
-The site consists of 6 main pages:
+This is a single-page website with sections for:
 
-1. **index.html** - Homepage
-   - Hero section with brand messaging
-   - Indoor comfort promise
-   - Baker Basecamp spotlight
-   - Statistics and social proof
-   - Investment CTA
-
-2. **why-rangeway.html** - Why Rangeway
-   - Scenic route charging challenge
-   - Indoor comfort guarantee
-   - Basecamps + Waystations model
-   - Hub-satellite architecture
-   - Market opportunity
-
-3. **network.html** - Our Network
-   - Baker Basecamp details
-   - Expansion corridors
-   - Strategic locations
-   - Gateway to Death Valley positioning
-
-4. **for-travelers.html** - For Travelers
-   - The Rangeway experience
-   - Pathfinder Rewards program
-   - Popular routes
-   - Trip planning resources
-
-5. **investors.html** - Investors
-   - Investment opportunity
-   - Community investment (crowdfunding)
-   - Institutional investor information
-   - Why invest in Rangeway
-
-6. **contact.html** - Contact
-   - Multiple contact options
-   - General inquiries
-   - Partnership opportunities
-   - Press & media
-   - Investor relations
+1. **Hero Section** - Main brand messaging and call-to-action
+2. **The Rangeway Difference** - Indoor comfort, charging, and amenities
+3. **Network** - Baker Basecamp spotlight and expansion plans
+4. **Why Rangeway** - Market opportunity and company mission
+5. **Investors** - Investment information and opportunities
+6. **Contact** - Get in touch with the team
+7. **Newsroom** - Latest updates from newsroom.rangeway.energy
 
 ## Site Architecture
 
 ```
 rangeway-pages/
-├── index.html
-├── why-rangeway.html
-├── network.html
-├── for-travelers.html
-├── investors.html
-├── contact.html
-├── brand.html (Brand Guidelines v1.0)
+├── index.html (single-page site)
+├── _config.yml
 ├── _layouts/
 │   └── default.html
 ├── _includes/
 │   ├── header.html
-│   └── footer.html
+│   ├── footer.html
+│   └── newsroom.html
 ├── assets/
 │   ├── css/
-│   │   └── style.css
+│   │   ├── style.css
+│   │   └── main.css
 │   └── js/
 │       └── main.js
 ├── images/
-│   ├── baker-exterior1.jpg
-│   ├── baker-exterior2.jpg
-│   ├── baker-exterior3.jpg
-│   ├── banner.png
-│   ├── trailhead-interior1.jpg
-│   ├── waystation-exterior-alamo2.jpg
-│   ├── waystation-exterior1-az.jpg
-│   ├── waystation-exterior1-jt.jpg
-│   ├── waystation-exterior1-shasta.jpg
-│   ├── waystation-exterior2-jt.jpg
-│   └── waystation-exterior4-pch.jpg
+│   └── (brand imagery)
+├── CNAME
+├── Gemfile
 └── _archive/
     └── production-backup-YYYYMMDD/
 ```
@@ -107,16 +65,17 @@ rangeway-pages/
 ## Features
 
 ### Design System
-- ✅ **Light/Dark Mode** - Automatic switching based on system preferences
-- ✅ **Responsive Design** - Mobile-first approach with optimized layouts
-- ✅ **Brand Typography** - Montserrat for headlines, Source Sans Pro for body
-- ✅ **Consistent Footer** - Always dark with Coastal Cream text, independent of light/dark mode
-- ✅ **Branded Header** - Full-color logo with RANGEWAY wordmark
+- **Light/Dark Mode** - Automatic switching based on system preferences
+- **Responsive Design** - Mobile-first approach with optimized layouts
+- **Brand Typography** - Montserrat for headlines, Source Sans Pro for body
+- **Consistent Footer** - Always dark with Coastal Cream text
+- **Branded Header** - Full-color logo with RANGEWAY wordmark
+- **Single-Page Navigation** - Smooth scrolling to sections
 
 ### Navigation
 - Sticky navigation bar with brand colors
 - Mobile-responsive hamburger menu
-- Consistent navigation across all pages
+- Smooth scroll to sections
 - Social media links in header
 - Footer navigation with quick links
 
@@ -132,6 +91,7 @@ rangeway-pages/
 - Minimal JavaScript footprint
 - Responsive images
 - Smooth scrolling behavior
+- Single-page load optimization
 
 ## Browser Support
 
@@ -166,7 +126,7 @@ Production URL: https://rangeway.energy
 ## Brand Voice & Terminology
 
 ### Key Terms
-- **Basecamps** - Full-service flagship locations (6+ chargers, café, 24/7 staff)
+- **Basecamps** - Full-service flagship locations (6+ chargers, cafe, 24/7 staff)
 - **Waystations** - Automated satellite locations (4 chargers, climate-controlled lounge)
 - **Trailkeepers** - Customer service staff at Basecamps
 - **Pathfinder Rewards** - Customer loyalty program
@@ -179,32 +139,22 @@ Production URL: https://rangeway.energy
 
 ## Version History
 
+### Version 3.0 - November 15, 2025
+- Migrated to single-page architecture
+- Consolidated all content into streamlined sections
+- Improved user flow and navigation
+- Dynamic newsroom integration from newsroom.rangeway.energy
+
 ### Version 2.0 - November 8, 2025
 - Implemented official brand guidelines
 - Added automatic light/dark mode
 - Updated typography to Montserrat/Source Sans Pro
 - Redesigned header with full-color logo + wordmark
-- Updated footer with brand colors
-- Fixed mobile spacing and navigation issues
-- Improved mobile-responsive design
-- Archived previous version to `_archive/`
 
 ### Version 1.0 - November 2, 2025
-- Initial beta site launch
+- Initial site launch
 - 6 main pages with complete content
 - Basic responsive design
-- Dark theme throughout
-
-## Brand Guidelines
-
-The complete brand guidelines document is available at `brand.html`. This self-contained HTML file includes:
-- Official brand colors with hex codes and usage examples
-- Typography specifications (Montserrat, Source Sans Pro)
-- Logo usage guidelines and variations
-- Brand voice and messaging principles
-- Visual examples and design patterns
-
-To view: Open `brand.html` in any web browser.
 
 ## Archive
 
@@ -218,5 +168,5 @@ For questions or issues, contact:
 
 ---
 
-Last Updated: November 8, 2025
-Version: 2.0 - Brand Guidelines Implementation
+Last Updated: November 15, 2025
+Version: 3.0 - Single-Page Architecture
