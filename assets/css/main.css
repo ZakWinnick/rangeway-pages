@@ -686,6 +686,20 @@ section {
   .grand-canyon-route .feature-content {
     order: 1;
   }
+
+  /* Desert Corridor route - image on top on mobile */
+  .desert-corridor-route {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desert-corridor-route .feature-image {
+    order: -1;
+  }
+
+  .desert-corridor-route .feature-content {
+    order: 1;
+  }
 }
 
 /* CTA Section */
