@@ -627,6 +627,96 @@ og_image: "/images/baker-exterior3.jpg"
   color: var(--sunset-coral);
 }
 
+/* Dark Mode Fixes */
+@media (prefers-color-scheme: dark) {
+  .stat-label {
+    color: #e0e0e0;
+  }
+
+  .tier-card {
+    background: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  .tier-tagline,
+  .tier-price-detail {
+    color: #b0b0b0;
+  }
+
+  .tier-features li {
+    color: #e0e0e0;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .slider-container label {
+    color: #e0e0e0;
+  }
+
+  .slider-labels,
+  .calculator-note {
+    color: #b0b0b0;
+  }
+
+  .threshold-table {
+    color: #e0e0e0;
+  }
+
+  .threshold-table td {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .pathfinder-cta p {
+    color: #e0e0e0;
+  }
+
+  .pathfinder-cta .info-text {
+    color: #b0b0b0;
+  }
+
+  .back-link {
+    color: #e0e0e0;
+  }
+
+  .step-number {
+    color: #1a1a1a;
+  }
+}
+
+/* Also support explicit dark theme attribute */
+[data-theme="dark"] .stat-label,
+[data-theme="dark"] .tier-card,
+[data-theme="dark"] .tier-features li,
+[data-theme="dark"] .slider-container label,
+[data-theme="dark"] .threshold-table,
+[data-theme="dark"] .pathfinder-cta p,
+[data-theme="dark"] .back-link {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .tier-tagline,
+[data-theme="dark"] .tier-price-detail,
+[data-theme="dark"] .slider-labels,
+[data-theme="dark"] .calculator-note,
+[data-theme="dark"] .pathfinder-cta .info-text {
+  color: #b0b0b0;
+}
+
+[data-theme="dark"] .tier-card {
+  background: #2a2a2a;
+}
+
+[data-theme="dark"] .tier-features li {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .threshold-table td {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .step-number {
+  color: #1a1a1a;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .pathfinder-hero {

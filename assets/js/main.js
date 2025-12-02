@@ -81,17 +81,48 @@ navLinks.forEach(link => {
   });
 });
 
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Smooth scroll for anchor links (only for same-page anchors)
+document.querySelectorAll('a[href^="#"], a[href*="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      const offsetTop = target.offsetTop - 80; // Account for fixed navbar
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      });
+    const href = this.getAttribute('href');
+
+    // Check if this is a same-page anchor link
+    // Skip if it's a link to another page (contains path before #)
+    if (href.startsWith('#')) {
+      // Pure anchor link like #section
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    } else if (href.includes('#')) {
+      // Link like /page#section or /#section
+      const hashIndex = href.indexOf('#');
+      const path = href.substring(0, hashIndex);
+      const hash = href.substring(hashIndex);
+
+      // Check if we're on the same page
+      const currentPath = window.location.pathname;
+      const isHomePage = currentPath === '/' || currentPath === '/index.html' || currentPath.endsWith('/');
+      const linkToHome = path === '/' || path === '' || path === '/index.html';
+
+      if ((isHomePage && linkToHome) || path === currentPath) {
+        // Same page - smooth scroll
+        const target = document.querySelector(hash);
+        if (target) {
+          e.preventDefault();
+          const offsetTop = target.offsetTop - 80;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      }
+      // Otherwise, let the browser handle navigation to the other page
     }
   });
 });
